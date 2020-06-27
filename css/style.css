@@ -1,10 +1,19 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(240,240,240,1.00)
+}
+
+h1, h2, h3{
+	color: #0f2557;
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: #333;
+  background-color: #0f2557;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 .navbar a {
@@ -33,7 +42,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #28559a;
 }
 
 .dropdown-content {
@@ -62,18 +71,18 @@ body {
   display: block;
 }
 
-.personalinfo {
-  padding: 1rem 2rem 1rem 2rem;
+.main {
+  padding: 4rem 3rem 1rem 3rem;
 }
 
 .personalinfo-box {
-  border: 2px solid rgba(0,0,0,.125);
+  border: 1.5px solid rgba(0,0,0,0.1);
   border-radius: .5rem;
   line-height: 1.5;
   margin: 0 2rem 2rem 0;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  width: 40%;
   float: left;
+  width: 40%;
 }
 
 .personalinfo-box img {
@@ -90,5 +99,5 @@ body {
 }
 
 .personalinfo-box a:hover {
-  color: blue;
+  color: #28559a;
 }
