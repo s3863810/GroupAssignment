@@ -72,3 +72,18 @@ function readMoreFunctionRomaisa() {
     moreText.style.display = "inline";
   }
 }
+
+function readMoreFunctionEleni() {
+  var dots = document.getElementById("dotsEleni");
+  var moreText = document.getElementById("readMoreEleni");
+  var btnText = document.getElementById("readMoreButtonEleni");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
