@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(240,240,240,1.00);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(240,240,240,1.00);
 }
 
 h1, h2, h3{
@@ -8,118 +8,143 @@ h1, h2, h3{
 }
 
 .navbar {
-  background-color: #0f2557;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
+    background-color: #0f2557;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
 }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.navbar a, .teamName {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.teamName {
+    padding-left: 3rem;
+}
+
+.nav-right {
+    float: right;
+    right: 0px;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #28559a;
+    background-color: #28559a;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .main {
-  padding: 4rem 3rem 1rem 3rem;
+    padding: 4rem 3rem 1rem 3rem;
 }
 
 .personalinfo-box {
-  border: 1.5px solid rgba(0,0,0,0.1);
-  border-radius: .5rem;
-  line-height: 1.5;
-  margin: 0 2rem 2rem 0;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  float: left;
-  width: 40%;
+    border: 1.5px solid rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    line-height: 1.5;
+    margin: 0 2rem 2rem 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    float: left;
+    width: 40%;
 }
 
 .personalinfo-box img {
-  border-radius: 50%;
-  margin: 1rem 2rem 0 1rem;
-  max-height: 8rem;
-  width: auto;
-  float: left;
+    border-radius: 50%;
+    margin: 1rem 2rem 0 1rem;
+    max-height: 8rem;
+    width: auto;
+    float: left;
 }
 
 .personalinfo-box a:link {
-  color: black;
-  text-decoration: none ;
+    color: black;
+    text-decoration: none ;
 }
 
 .personalinfo-box a:hover {
-  color: #28559a;
+    color: #28559a;
 }
 
-#readMoreBen, #readMoreChris, #readMoreDan, #readMoreJohn, #readMoreRomaisa {
-  display: none;
+#readMoreBen, #readMoreChris, #readMoreDan, #readMoreJohn, #readMoreRomaisa, #readMoreEleni {
+    display: none;
 }
 
 .button {
-  cursor:pointer;
-  width: 150px;
-  margin: 0 auto;
-  display: block;
-  border: 1.5px solid #28559a;
-  border-radius: 15px;
-  padding: 10px 0px;
-  transition-duration: 0.4s;
-  background-color: #28559a;
-  color: white;
+    cursor:pointer;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    border: 1.5px solid #28559a;
+    border-radius: 15px;
+    padding: 10px 0px;
+    transition-duration: 0.4s;
+    background-color: #28559a;
+    color: white;
 }
 
 .button:hover {
-  background-color: rgba(240,240,240,1.00);
-  color: #28559a;
+    background-color: rgba(240,240,240,1.00);
+    color: #28559a;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  column width: 200px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
