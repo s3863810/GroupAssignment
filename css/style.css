@@ -4,7 +4,67 @@ body {
 }
 
 h1, h2, h3{
-	color: #0f2557;
+    color: #0f2557;
+}
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background-color: rgba(240,240,240,1.00);
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}
+
+.banner {
+    display: inline; 
+    opacity: 1; 
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    background-color: #0f2557;
+    width: 100%;
+    height: 100%; 
+    z-index: 10;
+    top: 0; 
+    left: 0; 
+    position: fixed; 
+}
+
+.banner-heading {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    font-size: 60px; 
+    font-family: 'Alata';
+    color: rgba(240,240,240,1.00); 
 }
 
 .navbar {
@@ -26,12 +86,13 @@ h1, h2, h3{
 }
 
 .teamName {
-    padding-left: 3rem;
+    margin-left: 5.5rem;
 }
 
 .nav-right {
     float: right;
     right: 0px;
+    margin-right: 6.5rem;
 }
 
 .dropdown {
@@ -48,6 +109,10 @@ h1, h2, h3{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+}
+
+.active {
+    background-color: #2581B0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -84,14 +149,24 @@ h1, h2, h3{
     padding: 4rem 3rem 1rem 3rem;
 }
 
+.left-profiles {
+    float: left;
+    width: 50%;
+}
+
+.right-profiles {
+    float: right;
+    width: 50%;
+}
+
 .personalinfo-box {
     border: 1.5px solid rgba(0,0,0,0.1);
-    border-radius: .5rem;
+    border-radius: 1rem;
     line-height: 1.5;
-    margin: 0 2rem 2rem 0;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0 2rem 2rem 2rem;
+    padding: 1rem;
     float: left;
-    width: 40%;
+    width: 80%;
 }
 
 .personalinfo-box img {
@@ -133,18 +208,10 @@ h1, h2, h3{
     color: #28559a;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  column width: 200px;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
+.summary {
+    line-height: 1.5;
+    margin: 0 2rem 0 2rem;
+    padding: 0rem 1rem 1rem 1rem;
+    float: left;
+    width: 90%;
 }
