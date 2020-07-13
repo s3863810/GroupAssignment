@@ -65,21 +65,6 @@ function readMoreFunctionChris() {
   }
 }
 
-function readMoreFunctionDan() {
-  var dots = document.getElementById("dotsDan");
-  var moreText = document.getElementById("readMoreDan");
-  var btnText = document.getElementById("readMoreButtonDan");
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-
 function readMoreFunctionJohn() {
   var dots = document.getElementById("dotsJohn");
   var moreText = document.getElementById("readMoreJohn");
