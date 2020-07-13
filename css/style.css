@@ -76,6 +76,12 @@ h1, h2, h3{
     width: 100%;
 }
 
+.navbar img {
+    width: auto;
+    height: 40px;
+    margin-left: 4.75rem;
+}
+
 .navbar a, .teamName {
     float: left;
     font-size: 16px;
@@ -193,7 +199,7 @@ h1, h2, h3{
     color: #28559a;
 }
 
-#readMoreBen, #readMoreChris, #readMoreDan, #readMoreJohn, #readMoreRomaisa, #readMoreEleni {
+#readMoreBen, #readMoreChris, #readMoreJohn, #readMoreRomaisa, #readMoreEleni {
     display: none;
 }
 
@@ -218,7 +224,6 @@ h1, h2, h3{
 .summary {
     line-height: 1.5;
     margin: 0 2rem 0 2rem;
-    padding: 0rem 1rem 1rem 1rem;
     float: left;
     width: 90%;
 }
