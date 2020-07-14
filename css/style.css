@@ -41,17 +41,17 @@ h1, h2, h3{
 }
 
 .banner {
-    display: inline; 
-    opacity: 1; 
+    display: inline;
+    opacity: 1;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     background-color: #0f2557;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     z-index: 10;
-    top: 0; 
-    left: 0; 
-    position: fixed; 
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .banner-heading {
@@ -61,10 +61,10 @@ h1, h2, h3{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center; 
-    font-size: 60px; 
+    text-align: center;
+    font-size: 60px;
     font-family: 'Alata';
-    color: rgba(240,240,240,1.00); 
+    color: rgba(240,240,240,1.00);
 }
 
 .navbar {
@@ -74,6 +74,12 @@ h1, h2, h3{
     left: 0;
     z-index: 999;
     width: 100%;
+}
+
+.navbar img {
+    width: auto;
+    height: 40px;
+    margin-left: 4.75rem;
 }
 
 .navbar a, .teamName {
@@ -159,6 +165,13 @@ h1, h2, h3{
     width: 50%;
 }
 
+.center-profiles {
+    margin: auto;
+    width: 50%;
+}
+
+
+
 .personalinfo-box {
     border: 1.5px solid rgba(0,0,0,0.1);
     border-radius: 1rem;
@@ -186,7 +199,7 @@ h1, h2, h3{
     color: #28559a;
 }
 
-#readMoreBen, #readMoreChris, #readMoreDan, #readMoreJohn, #readMoreRomaisa, #readMoreEleni {
+#readMoreBen, #readMoreChris, #readMoreJohn, #readMoreRomaisa, #readMoreEleni {
     display: none;
 }
 
@@ -211,7 +224,6 @@ h1, h2, h3{
 .summary {
     line-height: 1.5;
     margin: 0 2rem 0 2rem;
-    padding: 0rem 1rem 1rem 1rem;
     float: left;
     width: 90%;
 }
