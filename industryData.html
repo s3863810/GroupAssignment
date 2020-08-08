@@ -39,22 +39,18 @@
 }
 
 /* Create two equal columns that floats next to each other */
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
 .column {
-  float: left;
+  flex: 30%;
   padding: 10px;
-}
-.left{
-	width:40%;
-	}
-.right{
-	width:60%;
-	}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+}	
+	
 </style>
 </head>
 <body>
