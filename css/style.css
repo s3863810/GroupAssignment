@@ -210,17 +210,30 @@ h1, h2, h3{
     display: none;
 }
 
-.button {
+.button, .indexbutton {
     cursor:pointer;
     width: 150px;
     margin: 0 auto;
     display: block;
-    border: 1.5px solid #28559a;
     border-radius: 15px;
     padding: 10px 0px;
     transition-duration: 0.4s;
-    background-color: #28559a;
     color: white;
+}
+
+.button {
+    border: 1.5px solid #28559a;
+    background-color: #28559a;
+}
+
+.indexbutton {
+    border: 1.5px solid #9a1750;
+    background-color: #9a1750;
+}
+
+.indexbutton:hover {
+    background-color: rgba(240,240,240,1.00);
+    color: #9a1750;
 }
 
 .button:hover {
